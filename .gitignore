@@ -1,0 +1,17 @@
+docs/output.md
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+coverage.xml
+htmlcov/
