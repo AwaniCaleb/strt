@@ -2373,3 +2373,7 @@ CREATE POLICY reports_isolation ON reports USING (org_id = current_setting('app.
 ```text
 DL-[n] | [date] | Replaces: [section, DEC-x or DL-y] | Change: [what changed to what] | Why: [reason]
 ```
+
+DL-1 | 2026-10-09 | Replaces: §10.3 Naming conventions (Branches and Commits rows) | Change: All work happens on the dev branch and reaches main only via pull request (no feat/, fix/, sec/, docs/ branches). Commit messages use `T<n>: <type>(<scope>): <summary>` (Conventional Commit types) with DCO sign-off via `git commit -s` | Why: task-number traceability required by the build workflow, while keeping Conventional Commit types and DCO
+
+DL-2 | 2026-10-09 | Replaces: §7.2 Environment layout (Local dev row: adds a development-environment constraint) | Change: Local development, tests and Claude Code sessions run on WSL2 (Ubuntu 24.04) with the repo inside the Linux filesystem; native Windows checkouts are not used; .gitattributes enforces LF line endings | Why: the maintainer's machine is Windows, while the product supports only Linux and macOS (DEC-18); POSIX file modes, dash, setsid and the hooks need a real Linux environment

@@ -14,6 +14,7 @@ It runs fully locally, makes no network calls, writes nothing into the user's re
 - Dev-only tools (exact pins live in `requirements-dev.txt`, installed with `--require-hashes`): pytest 8.x, hypothesis 6.x, coverage 7.x, ruff 0.x, mypy 1.x, shellcheck ≥ 0.10, dash, gitleaks 8.x, Docker 27.x (optional).
 - CI: GitHub Actions on ubuntu-24.04, macos-15, plus a windows-latest self-disable job.
 - No Node, no yarn/npm in this project.
+- Dev environment: WSL2 (Ubuntu 24.04), repo inside the Linux filesystem, or macOS/Linux. Never a native Windows checkout (DL-2).
 
 ## Commands (Makefile and requirements-dev.txt exist from T4)
 - Install: `python3 -m venv .venv && . .venv/bin/activate && pip install --require-hashes -r requirements-dev.txt`

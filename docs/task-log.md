@@ -8,7 +8,7 @@ Statuses: To do / In progress / Done / Blocked / Dropped. Numbers are never reus
 T0 | Project setup files (CLAUDE.md, task log, .gitignore) | Done | 2026-10-09
 
 ## Phase 0: Foundations
-T1 | Repo files: LICENSE (Apache-2.0), NOTICE, README stub, SECURITY.md stub, CONTRIBUTING.md (DCO), CHANGELOG.md [0.1] | To do | —
+T1 | Repo files: LICENSE, NOTICE, README stub, SECURITY.md stub, CONTRIBUTING.md (DCO), CHANGELOG.md, .gitattributes; DL-1, DL-2 [0.1] | Done | 2026-10-09
 T2 | (manual) GitHub settings: branch protection, passkey 2FA, private vulnerability reporting, mirror remote [0.1] | To do | —
 T3 | (manual) SSH commit/tag signing + commit allowed_signers [0.2] | To do | —
 T4 | Dev tooling: pyproject.toml (tool config), hashed requirements-dev.txt, Makefile, tests/conftest.py, golden helper [0.5] | To do | —
